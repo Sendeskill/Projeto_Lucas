@@ -1,0 +1,228 @@
+
+.home-container {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #3d2a2a, #2b1f1f);
+    background-color: #1b1717;
+    color: #be9696;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .top-bar {
+    background: linear-gradient(to bottom, #3d2a2a, #2b1f1f);
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #1b1717;
+    z-index: 1000;
+    gap: 1rem;
+  }
+  
+  .login-botao,
+  .cadastrese-botao {
+    background-color: #80669d;
+    color: white;
+    border-radius: 20px;
+    padding: 3px 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .logo {
+    max-width: 400px;
+    width: 80%;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    filter: drop-shadow(2px 2px 5px #000000aa);
+  }
+  
+  .slogan {
+    font-size: 1.8rem;
+    font-family: 'Georgia', serif;
+    color: #b00030;
+    text-shadow: 1px 1px 3px #000000;
+  }
+  
+  .subtitulo {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-weight: bold;
+  }
+  
+  .carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .carousel-slide {
+    text-align: center;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    max-width: 400px;
+    max-height: 900px;
+    border-radius: 12px;
+  }
+  
+  .carousel-label {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .nav-arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 0 1rem;
+  }
+  
+  .footer {
+    margin-top: 3rem;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #be9696;
+  }
+  
+  .social-icons a:hover {
+    color: #ffffff;
+  }
+
+  .darkeridinhos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 0 1rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .darker-item {
+    width: 200px;
+    flex: 1 1 200px;
+    max-width: 220px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .darker-button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s ease;
+    width: 100%;
+  }
+  
+  .darker-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .darker-button img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  .darker-label {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #be9696;
+    font-family: 'Georgia', serif;
+    display: block;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .top-bar {
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.5rem;
+    }
+  
+    .logo {
+      max-width: 300px;
+      margin-top: 6rem;
+    }
+  
+    .slogan {
+      font-size: 1.3rem;
+    }
+  
+    .carousel-slide {
+      max-width: 100%;
+    }
+  
+    .carousel-image {
+      max-height: 500px;
+      border-radius: 10px;
+    }
+  
+    .carousel-label {
+      font-size: 1rem;
+    }
+  
+    .login-botao,
+    .cadastrese-botao {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+
+    .darker-item {
+        flex: 1 1 180px;
+        max-width: 200px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      max-width: 220px;
+      margin-top: 7rem;
+    }
+  
+    .carousel-image {
+      max-height: 180px;
+    }
+  
+    .carousel-label {
+      font-size: 0.85rem;
+    }
+  
+    .slogan {
+      font-size: 1.1rem;
+    }
+  
+    .login-botao,
+    .cadastrese-botao {
+      font-size: 0.8rem;
+      padding: 4px 10px;
+    }
+    .darker-item {
+        flex: 1 1 180px;
+        max-width: 200px;
+      }
+
+}
+  

@@ -1,0 +1,48 @@
+<div class="home-container">
+    <header class="top-bar">
+        <div class="login-section">
+        <span>Já é nosso cliente?  </span>
+        <button class="login-botao"><a href="http://localhost:4200/login">Login</a></button>
+        <span>  ou  </span>
+        <button class="cadastrese-botao"><a href="http://localhost:4200/cadastro">Cadastre-se</a></button>
+      </div>
+    </header>
+  
+    <img src="assets/images/goth-corp-logo.png" alt="Logo Goth Corp" class="logo" />
+  
+    <h1 class="slogan">Vista-se no seu estilo, em qualquer lugar.</h1>
+  
+    <h2 class="subtitulo">Navegue pelos nossos produtos</h2>
+  
+    <div class="carousel-wrapper">
+      <button class="nav-arrow" (click)="prevSlide()">&#10094;</button>
+  
+      <div class="carousel-slide">
+        <img [src]="slides[currentSlide].image" [alt]="slides[currentSlide].title" class="carousel-image" />
+        <p class="carousel-label">{{ slides[currentSlide].title }}</p>
+      </div>
+  
+      <button class="nav-arrow" (click)="nextSlide()">&#10095;</button>
+    </div>
+  
+    <h2 class="subtitulo">🦇 Os darkeridinhos dos nossos clientes 🦇</h2>
+
+    <section class="darkeridinhos">
+        <div class="darker-item" *ngFor="let item of darkeridinhos">
+          <button class="darker-button">
+            <img [src]="item.image" [alt]="item.title" />
+            <span class="darker-label">{{ item.title }}</span>
+          </button>
+        </div>
+      </section>  
+    <footer class="footer">
+      <p>Acompanhe nossas redes sociais</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.twitter.com" target="_blank" aria-label="X/Twitter"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </footer>
+    
+  </div>
+  
