@@ -1,26 +1,36 @@
-
 <div class="login-container">
   <div class="login-card">
     <h2 class="login-title">Login</h2>
 
-    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
+    <form [formGroup]="loginForm"
+          (ngSubmit)="onSubmit()"
+          class="login-form">
       <mat-form-field appearance="fill">
         <mat-label>Email</mat-label>
-        <input matInput formControlName="email" type="email" required>
-        <mat-error *ngIf="email?.hasError('required')">O email é obrigatório.</mat-error>
+        <input matInput
+               formControlName="email"
+               type="email"
+               required>
+        <!-- <mat-error *ngIf="email?.hasError('required')">O email é obrigatório.</mat-error> -->
         <mat-error *ngIf="email?.hasError('email')">Formato inválido.</mat-error>
       </mat-form-field>
 
       <mat-form-field appearance="fill">
         <mat-label>Senha</mat-label>
-        <input matInput formControlName="senha" type="password" required>
-        <mat-error *ngIf="senha?.hasError('required')">A senha é obrigatória.</mat-error>
+        <input matInput
+               formControlName="senha"
+               type="password"
+               required>
+        <!-- <mat-error *ngIf="senha?.hasError('required')">A senha é obrigatória.</mat-error> -->
       </mat-form-field>
 
-      <button mat-raised-button color="primary" type="submit">Entrar</button>
+      <button mat-raised-button
+              color="primary"
+              type="submit">Entrar</button>
     </form>
 
-    <p *ngIf="mensagem" class="login-msg">{{ mensagem }}</p>
+    <p *ngIf="mensagem"
+       class="login-msg">{{ mensagem }}</p>
 
     <div class="login-footer">
       Ainda não tem conta? <a href="#">Cadastre-se</a>

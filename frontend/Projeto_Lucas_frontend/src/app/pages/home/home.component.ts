@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
-  standalone: true,
-  imports: [CommonModule],
+  standalone: false,
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
   slides = [
@@ -15,20 +13,21 @@ export class HomeComponent {
     { image: 'assets/images/Blazers.jpg', title: 'Blazers' },
     { image: 'assets/images/Sobretudos.jpg', title: 'Sobretudos' },
     { image: 'assets/images/Vestidos.jpg', title: 'Vestidos' },
-    { image: 'assets/images/Blusas.jpg', title: 'Blusas' }
+    { image: 'assets/images/Blusas.jpg', title: 'Blusas' },
   ];
 
   darkeridinhos = [
     { title: 'Coturnos', image: 'assets/images/Coturnos.jpg' },
     { title: 'Saltos', image: 'assets/images/Saltos.jpg' },
     { title: 'Colares', image: 'assets/images/Colares.jpg' },
-    { title: 'Anéis', image: 'assets/images/Aneis.jpg' }
+    { title: 'Anéis', image: 'assets/images/Aneis.jpg' },
   ];
 
   currentSlide = 0;
 
   prevSlide() {
-    this.currentSlide = (this.currentSlide - 1 + this.slides.length) % this.slides.length;
+    this.currentSlide =
+      (this.currentSlide - 1 + this.slides.length) % this.slides.length;
   }
 
   nextSlide() {
