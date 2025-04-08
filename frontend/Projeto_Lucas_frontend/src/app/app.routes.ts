@@ -3,6 +3,7 @@ import { Routes, RouterModule, RouterOutlet } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
+import { RouterLink } from '@angular/router';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,7 +15,8 @@ export const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [
     RouterModule,
-    RouterOutlet
+    RouterOutlet,
+    RouterLink
   ],
 })
 export class AppRoutingModule {}

@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
-import { RouterModule, RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet, RouterLink } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import { RouterModule, RouterOutlet } from '@angular/router';
     BrowserAnimationsModule,
     MatButtonModule,
     RouterOutlet,
-    RouterModule
+    RouterModule,
+    RouterLink
   ],
   providers: [],
   bootstrap: [AppComponent],
